@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Estudos para Vestibulares e ENEM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Guia de Estudos para Vestibulares e ENEM</h1>
+        <p>Seu portal de estudos para se preparar com confiança!</p>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#dicas">Dicas de Estudo</a></li>
+            <li><a href="#simulados">Simulados</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção de Dicas de Estudo -->
+    <section id="dicas">
+        <h2>Dicas de Estudo</h2>
+        <p>Confira algumas dicas essenciais para estudar de forma mais eficiente:</p>
+        <ul>
+            <li>Organize um plano de estudos com antecedência.</li>
+            <li>Faça revisões periódicas e anote os pontos mais importantes.</li>
+            <li>Resolva questões de anos anteriores para se familiarizar com o estilo das provas.</li>
+            <li>Mantenha uma rotina saudável com pausas para descanso e atividades físicas.</li>
+        </ul>
+    </section>
+
+    <!-- Seção de Simulados -->
+    <section id="simulados">
+        <h2>Simulados</h2>
+        <p>Teste seus conhecimentos com nosso simulado de múltipla escolha:</p>
+        
+        <!-- Questões do Simulado -->
+        <div id="quiz">
+            <p><strong>1. Qual é a fórmula química da água?</strong></p>
+            <label><input type="radio" name="q1" value="A"> H2O</label><br>
+            <label><input type="radio" name="q1" value="B"> CO2</label><br>
+            <label><input type="radio" name="q1" value="C"> O2</label><br>
+
+            <p><strong>2. Em que ano o Brasil foi descoberto?</strong></p>
+            <label><input type="radio" name="q2" value="A"> 1492</label><br>
+            <label><input type="radio" name="q2" value="B"> 1500</label><br>
+            <label><input type="radio" name="q2" value="C"> 1822</label><br>
+
+            <p><strong>3. Quem escreveu 'Dom Casmurro'?</strong></p>
+            <label><input type="radio" name="q3" value="A"> Machado de Assis</label><br>
+            <label><input type="radio" name="q3" value="B"> José de Alencar</label><br>
+            <label><input type="radio" name="q3" value="C"> Graciliano Ramos</label><br>
+        </div>
+
+        <button onclick="submitQuiz()">Enviar Respostas</button>
+        <div id="quiz-result"></div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Tem alguma dúvida ou sugestão? Entre em contato conosco!</p>
+        <form id="contact-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Guia de Estudos para Vestibulares e ENEM. Todos os direitos reservados a Victor Verri.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
